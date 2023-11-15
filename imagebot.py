@@ -1,10 +1,12 @@
 import openai
 
-# Insira a sua chave de API 
+# Inserir a chave de API para o programa funcionar
 
-openai.api_key = "" 
+chave_api = input("Insira aqui a sua chave de API: ")
 
-image = input("Digite a sua mensagem: ")
+openai.api_key = chave_api
+
+image = input("\nDigite a sua mensagem: ")
 
 # Função que puxa a API da openai para gerar a imagem
 
